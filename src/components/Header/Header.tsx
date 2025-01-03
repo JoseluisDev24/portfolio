@@ -11,18 +11,17 @@ function Header(props: Props) {
           <span className="text-yellow-400 text-4xl font-bold">Dev</span>
         </a>
       </div>
-
-      <ul className="flex justify-between items-center gap-7 ">
-        <a href="#about">
-          <li className="hover:text-yellow-300">Inicio</li>
+      <nav className="flex justify-between items-center gap-7 ">
+        <a href="#" className="hover:text-yellow-300">
+          Inicio
         </a>
-        <a href="#sobre-mi">
-          <li className="hover:text-yellow-300">Sobre mí</li>
+        <a href="#about" className="hover:text-yellow-300">
+          Sobre mí
         </a>
-        <a href="#">
-          <li className="hover:text-yellow-300">Proyectos</li>
+        <a href="#proyectos" className="hover:text-yellow-300">
+          Proyectos
         </a>
-      </ul>
+      </nav>
       <button className="bg-slate-300 rounded-lg h-10 w-40 text-black shadow-lg hover:shadow-yellow-300">
         Contáctame
       </button>

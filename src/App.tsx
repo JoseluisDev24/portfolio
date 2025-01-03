@@ -42,7 +42,7 @@ function App() {
         <div className="w-full lg:w-1/2">
           <img
             className="absolute inset-0 mx-auto w-[80%] h-auto lg:w-80 lg:h-auto lg:relative lg:inset-auto rounded-full opacity-30 lg:opacity-100 z-0"
-            src="../public/sectionprofile3.png"
+            src="../sectionprofile3.png"
             alt="imagen de perfil"
           />
         </div>
@@ -66,12 +66,12 @@ function App() {
           Habilidades técnicas
         </span>
         <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 pt-4">
-          <img className="w-20 sm:w-32" src="../public/html.png" alt="HTML" />
-          <img className="w-16 sm:w-28" src="../public/sass.png" alt="SASS" />
-          <img className="sm:w-20" src="../public/react.png" alt="React" />
+          <img className="w-20 sm:w-32" src="../html.png" alt="HTML" />
+          <img className="w-16 sm:w-28" src="../sass.png" alt="SASS" />
+          <img className="sm:w-20" src="../react.png" alt="React" />
           <img
             className="w-16 sm:w-28"
-            src="../public/node.png"
+            src="../node.png"
             alt="Node.js"
           />
         </div>
