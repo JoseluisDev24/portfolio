@@ -42,14 +42,14 @@ function App() {
         <div className="w-full lg:w-1/2">
           <img
             className="absolute inset-0 mx-auto w-[80%] h-auto lg:w-80 lg:h-auto lg:relative lg:inset-auto rounded-full opacity-30 lg:opacity-100 z-0"
-            src="../public/sectionProfile3.png"
+            src="../public/sectionprofile3.png"
             alt="imagen de perfil"
           />
         </div>
       </section>
       <section
         id="sobre-mi"
-        className="flex flex-col items-center justify-center py-6 w-2/3 border rounded-lg px-4"
+        className="flex flex-col items-center justify-center py-6 w-2/3"
       >
         <h2 className="text-4xl pb-8">Sobre mí</h2>
         <p>
