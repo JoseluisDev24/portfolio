@@ -1,4 +1,3 @@
-import Button from "../Button/Button";
 import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "./Header.module.css";
 import { useRef } from "react";
