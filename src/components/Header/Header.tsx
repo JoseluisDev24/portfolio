@@ -1,7 +1,7 @@
 import Button from "../Button/Button";
 import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "./Header.module.css";
-import { useRef} from "react";
+import { useRef } from "react";
 
 interface Props {}
 
@@ -22,7 +22,10 @@ function Header(props: Props) {
           <span className="text-yellow-400 text-4xl font-bold">Dev</span>
         </a>
       </div>
-      <nav ref={navRef} className="flex justify-center sm:justify-between items-center gap-7 ">
+      <nav
+        ref={navRef}
+        className="flex justify-center sm:justify-between items-center gap-7 "
+      >
         <a href="#" className="hover:text-yellow-300">
           Inicio
         </a>
@@ -32,7 +35,10 @@ function Header(props: Props) {
         <a href="#proyectos" className="hover:text-yellow-300">
           Proyectos
         </a>
-        <button className={styles.navBtn, styles.navCloseBtn} onClick={handleShowNavbar}>
+        <button
+          className={`${styles.navBtn} ${styles.navCloseBtn}`}
+          onClick={handleShowNavbar}
+        >
           <FaTimes className="text-3xl text-white" />
         </button>
       </nav>
