@@ -48,7 +48,7 @@ function App() {
         </div>
         <div className="w-full lg:w-1/2">
           <img
-            className="absolute top-14 inset-0 mx-auto w-[80%] h-auto rounded-full opacity-30 z-0 lg:w-80 lg:h-auto lg:relative lg:inset-auto lg:opacity-100"
+            className="absolute top-20 inset-0 mx-auto w-[80%] h-auto rounded-full opacity-30 z-0 lg:w-80 lg:h-auto lg:relative lg:inset-auto lg:opacity-100"
             src="../sectionprofile3.png"
             alt="imagen de perfil"
           />

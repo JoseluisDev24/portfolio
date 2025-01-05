@@ -14,7 +14,7 @@ function Header(props: Props) {
   };
 
   return (
-    <header className="fixed bg-black font-custom px-4 w-full animate-slideDown z-20 opacity-90 flex justify-between items-center gap-10 sm:p-4 h-16 text-slate-200 sm:w-2/3">
+    <header className="fixed bg-black font-custom px-4 w-full animate-slideDown z-20 opacity-90 flex justify-between items-center gap-10 sm:p-4 h-20 text-slate-200 sm:w-2/3">
       <div className="text-3xl font-bold">
         <a href="#">
           <span className="text-4xl">JR</span>
