@@ -23,7 +23,7 @@ function App() {
           </h1>
           <div className="flex gap-4 py-8">
             <a href="#">
-              <Button>Contactame</Button>
+              <Button className="bg-blue-500">Contactame</Button>
             </a>
             <a href="#">
               <Button>Descargar CV</Button>
@@ -86,7 +86,7 @@ function App() {
         </div>
       </section>
       <section className="min-h-screen w-full sm:pt-12 flex flex-col items-center sm:w-2/3 pb-20">
-        <h3 className="text-4xl py-6">Proyectos</h3>
+        <h3 className="text-4xl py-10">Proyectos</h3>
         <div className="flex flex-wrap justify-center gap-8 pt-6">
           <ProjectsMap />
         </div>
