@@ -18,7 +18,7 @@ function App() {
           <span className="text-5xl font-semibold text-slate-200">
             Soy José Luis,
           </span>
-          <h1 className="text-3xl text-yellow-300 font-bold">
+          <h1 className="text-3xl text-yellow-400 font-bold">
             Desarrollador Fullstack.
           </h1>
           <div className="flex gap-4 py-8">
