@@ -9,7 +9,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, image, link }) => {
   return (
-    <div className="w-4/5 h-62 sm:w-4/12 border rounded overflow-hidden">
+    <div className="w-11/12 h-62 sm:w-4/12 border rounded overflow-hidden">
       <img className="object-cover p-6 " src={image} alt={title} />
       <div className="px-6 py-2">
         <h2 className="font-bold text-xl mb-2">{title}</h2>

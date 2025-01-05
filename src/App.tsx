@@ -85,7 +85,7 @@ function App() {
           <img className="w-10 sm:w-20" src="../github.png" alt="logo github" />
         </div>
       </section>
-      <section className="min-h-screen w-full pt-10 sm:pt-12 flex flex-col items-center sm:w-2/3 sm:pb-20">
+      <section className="min-h-screen w-full sm:pt-12 flex flex-col items-center sm:w-2/3 pb-20">
         <h3 className="text-4xl py-6">Proyectos</h3>
         <div className="flex flex-wrap justify-center gap-8 pt-6">
           <ProjectsMap />
