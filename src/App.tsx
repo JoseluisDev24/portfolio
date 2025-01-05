@@ -1,13 +1,17 @@
 import { TypeAnimation } from "react-type-animation";
 import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
+import ProjectsMap from "./components/ProjectsMap/ProjectsMap";
 
 function App() {
   return (
-    <div className="bg-black relative font-workSans text-slate-200 px-8 flex flex-col items-center scroll-smooth">
+    <div className="bg-black relative font-workSans text-slate-200 px-12 flex flex-col items-center sm: scroll-smooth">
       <Header />
-      <section id="inicio" className="relative w-full h-screen flex flex-col lg:flex-row justify-center sm:justify-between items-center pt-12 sm-pb-20  lg:w-2/3">
-        <div className="w-full lg:w-1/2 flex flex-col items-center sm:items-start gap-6 text-center lg:text-left relative z-10">
+      <section
+        id="inicio"
+        className="relative w-full h-screen flex flex-col lg:flex-row justify-center items-center pt-12 sm-pb-20  sm:w-2/3"
+      >
+        <div className="w-full flex flex-col items-center sm:items-start  gap-6 text-center lg:text-left relative z-10">
           <span className="text-gray-300 sm:text-gray-400 text-4xl sm:text-2xl">
             Hola,
           </span>
@@ -52,19 +56,19 @@ function App() {
       </section>
       <section
         id="sobre-mi"
-        className="flex flex-col items-center text-center pb-6 w-full sm:w-2/3"
+        className="flex flex-col items-center text-center pb-6 w-full h-screen sm:w-2/3"
       >
-        <h2 className="text-4xl pt-10">Sobre mí</h2>
-        <p className="py-12">
+        <h2 className="text-4xl sm:pt-16">Sobre mí</h2>
+        <p className="py-10">
           Soy desarrollador frontend. Me apasiona crear interfaces web robustas
           y funcionales. Mis habilidades más fuertes son html, css y javascrypt.
-          Estoy constantemente ampliando mis conocimientos con nuevas herramientas y
-          tecnologías. También me siento cómodo trabajando con
+          Estoy constantemente ampliando mis conocimientos con nuevas
+          herramientas y tecnologías. También me siento cómodo trabajando con
           frameworks como React Js. Mi objetivo es siempre aprender, innovar y
           aportar valor con cada línea de código.
         </p>
-        <span className="text-yellow-300 font-semibold text-center sm:text-start text-3xl">
-          Habilidades técnicas
+        <span className="text-yellow-300 font-semibold text-center sm:text-start text-3xl py-6">
+          Habilidades técnicas:
         </span>
         <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 pt-4">
           <img className="w-8 sm:w-16" src="../html.png" alt="logo HTML" />
@@ -78,10 +82,54 @@ function App() {
             src="../tailwind.png"
             alt="logo tailwind"
           />
-          <img className="w-10 sm:w-20" src="../git.png" alt="logo git" />
           <img className="w-10 sm:w-20" src="../github.png" alt="logo github" />
         </div>
       </section>
+      <section className="min-h-screen w-full pt-10 sm:pt-12 flex flex-col items-center sm:w-2/3 sm:pb-20">
+        <h3 className="text-4xl py-6">Proyectos</h3>
+        <div className="flex flex-wrap justify-center gap-8 pt-6">
+          <ProjectsMap />
+        </div>
+      </section>
+      <footer className="pt-10">
+        <hr />
+        <div className="w-full h-32 flex justify-center items-center gap-4">
+          <a href="#">
+            <img
+              className="w-16 hover:scale-110"
+              src="../githubfooter.png"
+              alt="logo github"
+            />
+          </a>
+          <a href="#">
+            <img
+              className="w-16 hover:scale-110"
+              src="../whatsappfooter.png"
+              alt="logo github"
+            />
+          </a>
+          <a href="#">
+            <img
+              className="w-14 hover:scale-110"
+              src="../instagramfooter.png"
+              alt="logo github"
+            />
+          </a>
+          <a href="#">
+            <img
+              className="w-16 hover:scale-110"
+              src="../linkedinfooter.png"
+              alt="logo github"
+            />
+          </a>
+        </div>
+        <div>
+          <p className="text-center text-gray-400 text-sm pb-4">
+            {" "}
+            © 2025 José Luis. Todos los derechos reservados.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

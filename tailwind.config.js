@@ -16,6 +16,9 @@ export default {
       animation: {
         slideDown: "slideDown 1s ease-out",
       },
+      boxShadow: {
+        'custom-blue': '0 4px 6px -1px rgba(59, 130, 246, 0.5), 0 2px 4px -1px rgba(59, 130, 246, 0.25)',
+      },
     },
   },
   plugins: [],

@@ -13,7 +13,7 @@ header .navBtn {
    
     header nav {
         color: black;
-        font-weight: bolder;
+        font-weight: semibold;
         font-size: 1.5rem;
         position: fixed;
         top: 0;
