@@ -14,7 +14,7 @@ function Header(props: Props) {
   };
 
   return (
-    <header className="header w-full animate-slideDown flex justify-between items-center gap-10 pt-4 text-white md:w-2/3">
+    <header className="fixed bg-black font-custom px-4 w-full animate-slideDown z-20 opacity-90 flex justify-between items-center gap-10 sm:p-4 h-16 text-slate-200 md:w-2/3">
       <div className="text-3xl font-bold">
         <a href="#">
           <span className="text-4xl">JR</span>
@@ -25,10 +25,18 @@ function Header(props: Props) {
         ref={navRef}
         className="flex justify-center sm:justify-between items-center gap-7 "
       >
-        <a href="#" className="hover:text-yellow-300">
+        <a
+          href="#inicio"
+          className="hover:text-yellow-300"
+          onClick={handleShowNavbar}
+        >
           Inicio
         </a>
-        <a href="#sobre-mi" className="hover:text-yellow-300">
+        <a
+          href="#sobre-mi"
+          className="hover:text-yellow-300"
+          onClick={handleShowNavbar}
+        >
           Sobre mí
         </a>
         <a href="#proyectos" className="hover:text-yellow-300">
