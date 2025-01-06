@@ -2,16 +2,16 @@ import React from "react";
 
 interface Props {
   children: React.ReactNode;
+  link?: string;
+  download?: string;
   className?: string;
-
 }
-
-function Button({ children }: Props) {
+const Button = ({ children, link, download, className }: Props) => {
   return (
-    <button className="bg-orange-400 font-bold text-lg rounded-md h-10 w-36 text-black shadow-lg hover:shadow-yellow-300 flex items-center justify-center p-2">
-      {children}
-    </button>
+    <a href={link} download={download} className={className}>
+      <button>{children}</button>
+    </a>
   );
-}
+};
 
 export default Button;

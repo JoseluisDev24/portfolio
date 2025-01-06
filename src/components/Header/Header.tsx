@@ -14,11 +14,13 @@ function Header(props: Props) {
   };
 
   return (
-    <header className="fixed bg-black font-custom px-4 w-full animate-slideDown z-20 opacity-90 flex justify-between items-center gap-10 sm:p-4 h-20 text-slate-200 sm:w-2/3">
+    <header className="fixed bg-black font-custom px-4 w-full sm:w-2/3 animate-slideDown z-20 opacity-90 flex justify-between items-center gap-10 sm:py-4 sm:px-8 h-20 text-slate-200 ">
       <div className="text-3xl font-bold">
         <a href="#">
-          <span className="text-4xl">JR</span>
-          <span className="text-yellow-400 text-4xl font-bold">Dev</span>
+          <span className="text-4xl hover:text-5xl">JR</span>
+          <span className="text-yellow-400 text-4xl font-bold hover:text-5xl">
+            Dev
+          </span>
         </a>
       </div>
       <nav
@@ -27,19 +29,19 @@ function Header(props: Props) {
       >
         <a
           href="#inicio"
-          className="hover:text-yellow-300"
+          className="hover:text-yellow-300 hover:scale-110"
           onClick={handleShowNavbar}
         >
           Inicio
         </a>
         <a
           href="#sobre-mi"
-          className="hover:text-yellow-300"
+          className="hover:text-yellow-300 hover:scale-110"
           onClick={handleShowNavbar}
         >
           Sobre mí
         </a>
-        <a href="#proyectos" className="hover:text-yellow-300">
+        <a href="#proyectos" className="hover:text-yellow-300 hover:scale-110 trans">
           Proyectos
         </a>
         <button

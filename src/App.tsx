@@ -1,4 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
+import { FaDownload } from "react-icons/fa";
 import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
 import ProjectsMap from "./components/ProjectsMap/ProjectsMap";
@@ -9,13 +10,13 @@ function App() {
       <Header />
       <section
         id="inicio"
-        className="relative w-full h-screen flex flex-col lg:flex-row justify-center items-center pt-12 sm-pb-20  sm:w-2/3"
+        className="relative w-full h-screen flex flex-col lg:flex-row justify-center items-center pt-12 sm-pb-20 sm:w-2/3"
       >
-        <div className="w-full flex flex-col items-center sm:items-start  gap-6 text-center lg:text-left relative z-10">
-          <span className="text-gray-300 sm:text-gray-400 text-4xl sm:text-2xl">
+        <div className="w-full flex flex-col items-center sm:items-start gap-6 text-center lg:text-left relative z-10">
+          <span className="text-gray-300 sm:text-gray-400 text-4xl sm:text-2xl font-custom">
             Hola,
           </span>
-          <span className="text-5xl font-semibold text-slate-200">
+          <span className="text-5xl font-custom text-lime-100">
             Soy José Luis,
           </span>
           <h1 className="text-3xl text-yellow-400 font-bold">
@@ -23,14 +24,23 @@ function App() {
           </h1>
           <div className="flex gap-4 py-8">
             <a href="#">
-              <Button className="bg-blue-500">Contactame</Button>
+              <Button className="bg-blue-500 text-slate-200 w-40 font-semibold text-lg rounded-md hover:bg-blue-600 flex items-center justify-center p-2">
+                Contactame
+              </Button>
             </a>
-            <a href="#">
-              <Button>Descargar CV</Button>
+            <a
+              href="/cv.pdf"
+              download="José Rosano CV.pdf"
+              className="border w-40 rounded-md hover:shadow-[0_0_10px_rgba(250,204,21,0.8)] flex items-center justify-center p-2 transition-shadow duration-300"
+            >
+              Descargar CV
+              <FaDownload className="ml-2" />
             </a>
           </div>
           <div>
-            <p className="text-3xl sm:text-2xl pb-6">Si puedes pensarlo,</p>
+            <p className="text-3xl sm:text-2xl pb-6 font-custom text-lime-100">
+              Si puedes pensarlo,
+            </p>
             <TypeAnimation
               sequence={[
                 1000,
@@ -58,7 +68,9 @@ function App() {
         id="sobre-mi"
         className="flex flex-col items-center text-center pb-6 w-full h-screen sm:w-2/3"
       >
-        <h2 className="text-4xl sm:pt-16">Sobre mí</h2>
+        <h2 className="text-4xl sm:pt-16 font-semibold font-custom">
+          Sobre mí
+        </h2>
         <p className="py-10">
           Soy desarrollador frontend. Me apasiona crear interfaces web robustas
           y funcionales. Mis habilidades más fuertes son html, css y javascrypt.
@@ -75,7 +87,7 @@ function App() {
           <img className="w-10 sm:w-20" src="../css.png" alt="logo css" />
           <img className="w-10 sm:w-20" src="../js.png" alt="logo javascrypt" />
           <img className="w-16 sm:w-24" src="../sass.png" alt="logo SASS" />
-          <img className="w-10 sm:w-16" src="../react.png" alt="logo React" />
+          <img className="w-12 sm:w-16" src="../react.png" alt="logo React" />
           <img className="w-16 sm:w-24" src="../node.png" alt="logo Node.js" />
           <img
             className="w-14 sm:w-24"
@@ -85,8 +97,8 @@ function App() {
           <img className="w-10 sm:w-20" src="../github.png" alt="logo github" />
         </div>
       </section>
-      <section className="min-h-screen w-full sm:pt-12 flex flex-col items-center sm:w-2/3 pb-20">
-        <h3 className="text-4xl py-10">Proyectos</h3>
+      <section id="proyectos" className="min-h-screen w-full sm:pt-12 flex flex-col items-center sm:w-2/3 pb-20">
+        <h3 className="text-4xl py-10 font-semibold font-custom">Proyectos</h3>
         <div className="flex flex-wrap justify-center gap-8 pt-6">
           <ProjectsMap />
         </div>
@@ -96,28 +108,28 @@ function App() {
         <div className="w-full h-32 flex justify-center items-center gap-4">
           <a href="#">
             <img
-              className="w-16 hover:scale-110"
+              className="w-14 sm:w-16 hover:scale-110"
               src="../githubfooter.png"
               alt="logo github"
             />
           </a>
           <a href="#">
             <img
-              className="w-16 hover:scale-110"
+              className="w-12 sm:w-14 hover:scale-110"
               src="../whatsappfooter.png"
-              alt="logo github"
+              alt="logo whatsapp"
             />
           </a>
           <a href="#">
             <img
-              className="w-14 hover:scale-110"
+              className="w-10 sm:w-12 hover:scale-110"
               src="../instagramfooter.png"
-              alt="logo github"
+              alt="logo instagram"
             />
           </a>
           <a href="#">
             <img
-              className="w-16 hover:scale-110"
+              className="w-12 sm:w-16 hover:scale-110"
               src="../linkedinfooter.png"
               alt="logo github"
             />

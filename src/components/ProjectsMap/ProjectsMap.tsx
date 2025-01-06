@@ -4,31 +4,35 @@ const ProjectsMap = () => {
   const projects = [
     {
       id: 1,
-      title: "Sarandí Fit Web",
-      description: "Web con html y css.",
-      image: "/sarandifit.png",
-      link: "https://sarandifit-prueba.netlify.app/",
+      title: "Portfolio",
+      description: "Portfolio realizado con HTML, CSS, React JS.",
+      image: "/portfolio.png",
+      link: "https://my-portfolio-jlrc.netlify.app/",
+      linkGithub: "https://github.com/JoseluisDev24/portfolio",
     },
     {
       id: 2,
-      title: "Sarandí Fit Web",
-      description: "Web con html y css.",
-      image: "/sarandifit.png",
-      link: "https://sarandifit-prueba.netlify.app/",
+      title: "Todo List",
+      description: "Todo list con HTML, CSS, Javascrypt.",
+      image: "/tododom.png",
+      link: "https://todo-bios.netlify.app/",
+      linkGithub: "",
     },
     {
       id: 3,
-      title: "Sarandí Fit Web",
+      title: "Sarandí Fit",
       description: "Web con html y css.",
       image: "/sarandifit.png",
       link: "https://sarandifit-prueba.netlify.app/",
+      linkGithub: "",
     },
     {
       id: 4,
-      title: "Sarandí Fit Web",
-      description: "Web con html y css.",
-      image: "/sarandifit.png",
-      link: "https://sarandifit-prueba.netlify.app/",
+      title: "Todo List React",
+      description: "Todo List usando React Js.",
+      image: "/todoreact.png",
+      link: "https://todolistreactbios.netlify.app/",
+      linkGithub: "https://github.com/JoseluisDev24/entregable-react-bios",
     },
   ];
 
@@ -41,6 +45,7 @@ const ProjectsMap = () => {
           description={project.description}
           image={project.image}
           link={project.link}
+          linkGithub={project.linkGithub}
         />
       ))}
     </div>
