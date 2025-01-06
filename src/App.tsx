@@ -13,10 +13,10 @@ function App() {
         className="relative w-full h-screen flex flex-col lg:flex-row justify-center items-center pt-12 sm-pb-20 sm:w-2/3"
       >
         <div className="w-full flex flex-col items-center sm:items-start gap-6 text-center lg:text-left relative z-10">
-          <span className="text-gray-300 sm:text-gray-400 text-4xl sm:text-2xl font-custom">
+          <span className="text-yellow-400 sm:text-gray-400 text-4xl sm:text-2xl font-custom">
             Hola,
           </span>
-          <span className="text-5xl font-custom text-lime-100">
+          <span className="text-5xl font-custom text-slate-100">
             Soy José Luis,
           </span>
           <h1 className="text-3xl text-yellow-400 font-bold">
@@ -97,7 +97,10 @@ function App() {
           <img className="w-10 sm:w-20" src="../github.png" alt="logo github" />
         </div>
       </section>
-      <section id="proyectos" className="min-h-screen w-full sm:pt-12 flex flex-col items-center sm:w-2/3 pb-20">
+      <section
+        id="proyectos"
+        className="min-h-screen w-full sm:pt-12 flex flex-col items-center sm:w-2/3 pb-20"
+      >
         <h3 className="text-4xl py-10 font-semibold font-custom">Proyectos</h3>
         <div className="flex flex-wrap justify-center gap-8 pt-6">
           <ProjectsMap />

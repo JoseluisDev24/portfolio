@@ -18,7 +18,7 @@ function Header(props: Props) {
       <div className="text-3xl font-bold">
         <a href="#">
           <span className="text-4xl hover:text-5xl">JR</span>
-          <span className="text-yellow-400 text-4xl font-bold hover:text-5xl">
+          <span className="text-cyan-600 text-4xl font-bold hover:text-5xl">
             Dev
           </span>
         </a>
