@@ -13,15 +13,15 @@ function App() {
         className="relative w-full h-screen flex flex-col lg:flex-row justify-center items-center sm:pt-36 sm-pb-20 sm:w-2/3"
       >
         <div className="w-full flex flex-col items-center sm:items-start gap-4 sm:gap-3 text-center lg:text-left relative z-10">
-          <span className="text-slate-100 text-2xl pt-32 sm:pt-0 sm:text-2xl font-custom">
+          <span className="text-slate-100 text-2xl sm:text-3xl pt-40 sm:pt-0 font-custom">
             Hola,
           </span>
-          <span className="text-4xl font-custom text-slate-100">
+          <span className="text-4xl sm:text-5xl font-custom text-slate-100">
             Soy José Luis,
             <br />
             Rosano
           </span>
-          <h1 className="text-2xl text-red-600 font-bold">
+          <h1 className="text-3xl sm:text-4xl text-red-600 font-bold">
             Desarrollador Fullstack.
           </h1>
           <div className="py-4 flex gap-4">
@@ -40,7 +40,7 @@ function App() {
                   </div>
           </div>
           <div>
-            <p className="text-2x pb-6 font-custom text-slate-200">
+            <p className="text-2xl pb-2 font-custom text-slate-200">
               Si puedes pensarlo,
             </p>
             <div>
@@ -62,7 +62,7 @@ function App() {
         </div>
         <div className="w-full lg:w-1/2">
           <img
-            className="absolute top-28 inset-0 mx-auto w-[40%] h-auto rounded-full z-0 lg:w-80 lg:h-auto lg:relative lg:top-0 lg:inset-auto lg:opacity-100"
+            className="absolute top-28 inset-0 mx-auto w-[50%] h-auto rounded-full z-0 lg:w-80 lg:h-auto lg:relative lg:top-0 lg:inset-auto lg:opacity-100"
             src="../perfil2.jpg"
             alt="imagen de perfil"
           />
