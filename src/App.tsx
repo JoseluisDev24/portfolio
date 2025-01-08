@@ -12,27 +12,27 @@ function App() {
         id="inicio"
         className="relative w-full h-screen flex flex-col lg:flex-row justify-center items-center sm:pt-36 sm-pb-20 sm:w-2/3"
       >
-        <div className="w-full flex flex-col items-center sm:items-start gap-6 sm:gap-3 text-center lg:text-left relative z-10">
-          <span className="text-slate-100 text-4xl pt-64 sm:pt-0 sm:text-2xl font-custom">
+        <div className="w-full flex flex-col items-center sm:items-start gap-4 sm:gap-3 text-center lg:text-left relative z-10">
+          <span className="text-slate-100 text-2xl pt-32 sm:pt-0 sm:text-2xl font-custom">
             Hola,
           </span>
-          <span className="text-5xl font-custom text-slate-100">
+          <span className="text-4xl font-custom text-slate-100">
             Soy José Luis,
             <br />
             Rosano
           </span>
-          <h1 className="text-3xl text-red-600 font-bold">
+          <h1 className="text-2xl text-red-600 font-bold">
             Desarrollador Fullstack.
           </h1>
-          <div className="py-6 flex gap-4">
-            <Button className="bg-red-700 text-slate-200 w-40 h-14 font-semibold text-xl rounded-md hover:bg-red-500 flex items-center justify-center">
+          <div className="py-4 flex gap-4">
+            <Button className="bg-red-700 text-slate-200 w-40 h-14 font-semibold text-md rounded-md hover:bg-red-500 flex items-center justify-center">
               Contáctame
             </Button>
-            <div className="sm:flex gap-4 sm:hidden">
+            <div className="gap-4 sm:hidden">
                     <a
                       href="/cv.pdf"
                       download="José Rosano CV.pdf"
-                      className="border text-sm w-40 h-14 rounded-md hover:bg-red-700 transition flex items-center justify-center p-2"
+                      className="border text-md w-40 h-14 rounded-md hover:bg-red-700 transition flex items-center justify-center p-2"
                     >
                       Descargar CV
                       <FaDownload className="ml-2" />
@@ -40,7 +40,7 @@ function App() {
                   </div>
           </div>
           <div>
-            <p className="text-3xl sm:text-2xl pb-6 font-custom text-slate-200">
+            <p className="text-2x pb-6 font-custom text-slate-200">
               Si puedes pensarlo,
             </p>
             <div>
@@ -62,7 +62,7 @@ function App() {
         </div>
         <div className="w-full lg:w-1/2">
           <img
-            className="absolute top-28 inset-0 mx-auto w-[60%] h-auto rounded-full z-0 lg:w-80 lg:h-auto lg:relative lg:top-0 lg:inset-auto lg:opacity-100"
+            className="absolute top-28 inset-0 mx-auto w-[40%] h-auto rounded-full z-0 lg:w-80 lg:h-auto lg:relative lg:top-0 lg:inset-auto lg:opacity-100"
             src="../perfil2.jpg"
             alt="imagen de perfil"
           />
@@ -84,7 +84,7 @@ function App() {
             trabajando con frameworks como React Js. Mi objetivo es siempre
             aprender, innovar y aportar valor con cada línea de código.
           </p>
-          <span className="text-red-600 font-semibold text-center sm:text-start text-3xl py-6">
+          <span className="text-red-500 font-semibold text-center sm:text-start text-3xl py-6">
             Habilidades técnicas
           </span>
           <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 pt-4">
