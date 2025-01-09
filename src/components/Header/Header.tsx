@@ -19,13 +19,13 @@ function Header(props: Props) {
     <header className="fixed bg-black font-custom px-4 w-full sm:w-2/3 animate-slideDown z-20 opacity-95 flex justify-between items-center gap-10 sm:py-4 sm:px-8 h-20 text-slate-200 ">
       <div className="text-3xl font-bold">
         <a href="#">
-          <span className="text-4xl">JR</span>
-          <span className="text-red-600 text-4xl font-bold ">Dev</span>
+          <span className="text-4xl sm:text-3xl">JR</span>
+          <span className="text-red-600 text-4xl sm:text-3xl font-bold ">Dev</span>
         </a>
       </div>
       <nav
         ref={navRef}
-        className="flex justify-center sm:justify-between items-center gap-7"
+        className="flex justify-center items-center gap-7 sm:items-center sm:text-xl lg:text-lg"
       >
         <a
           href="#inicio"
@@ -48,17 +48,26 @@ function Header(props: Props) {
         >
           Proyectos
         </a>
+        <a
+          href="https://wa.me/59892171503?"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-red-500 hover:scale-110 transition"
+          onClick={handleShowNavbar}
+        >
+          Contacto
+        </a>
         <button
           className={`${styles.navBtn} ${styles.navCloseBtn}`}
           onClick={handleShowNavbar}
         >
-          <FaTimes className="text-3xl text-white" />
+          <FaTimes className="text-3xl sm:text-2xl text-white" />
         </button>
       </nav>
       <button className={styles.navBtn} onClick={handleShowNavbar}>
-        <FaBars className="text-3xl text-white" />
+        <FaBars className="text-3xl sm:text-2xl text-white" />
       </button>
-      <div className="hidden sm:flex gap-4">
+      <div className="hidden sm:hidden gap-4">
         <a
           href="/cv.pdf"
           download="José Rosano CV.pdf"

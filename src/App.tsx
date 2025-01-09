@@ -3,6 +3,8 @@ import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
 import ProjectsMap from "./components/ProjectsMap/ProjectsMap";
 import { FaDownload } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import WhatsAppButton from "./components/WhatsappButton/WhatsappButton";
 
 function App() {
   return (
@@ -10,37 +12,37 @@ function App() {
       <Header />
       <section
         id="inicio"
-        className="relative w-full h-screen flex flex-col lg:flex-row justify-center items-center sm:pt-36 sm-pb-20 sm:w-2/3"
+        className="relative w-full h-screen flex flex-col lg:flex-row justify-center items-center sm:pt-24 lg:pt-36 sm-pb-20 sm:w-2/3"
       >
-        <div className="w-full flex flex-col items-center sm:items-start gap-4 sm:gap-3 text-center lg:text-left relative z-10">
-          <span className="text-slate-100 text-2xl sm:text-3xl pt-40 sm:pt-0 font-custom">
+        <div className="w-full flex flex-col items-center sm:items-start gap-4 sm:gap-2 lg:gap-6 text-center lg:text-left relative z-10">
+          <span className="text-slate-100 text-2xl sm:text-xl lg:text-3xl pt-40 lg:pt-30 sm:pt-0 font-custom">
             Hola,
           </span>
-          <span className="text-4xl sm:text-5xl font-custom text-slate-100">
-            Soy José Luis,
+          <span className="text-4xl sm:text-3xl sm:text-left lg:text-5xl font-custom text-slate-100">
+            Soy José Luis
             <br />
             Rosano
           </span>
-          <h1 className="text-3xl sm:text-4xl text-red-600 font-bold">
+          <h1 className="text-3xl sm:text-xl lg:text-4xl text-red-600 font-bold">
             Desarrollador Fullstack.
           </h1>
-          <div className="py-4 flex gap-4">
-            <Button className="bg-red-700 text-slate-200 w-40 h-14 font-semibold text-md rounded-md hover:bg-red-500 flex items-center justify-center">
+          <div className="py-4 sm:py-1 flex gap-4">
+            <Button className="bg-red-700 w-40 sm:w-32 h-14 sm:h-10 font-semibold text-md rounded-md hover:bg-red-500 flex items-center justify-center">
               Contáctame
             </Button>
             <div className="gap-4 sm:hidden">
-                    <a
-                      href="/cv.pdf"
-                      download="José Rosano CV.pdf"
-                      className="border text-md w-40 h-14 rounded-md hover:bg-red-700 transition flex items-center justify-center p-2"
-                    >
-                      Descargar CV
-                      <FaDownload className="ml-2" />
-                    </a>
-                  </div>
+              <a
+                href="/cv.pdf"
+                download="José Rosano CV.pdf"
+                className="border text-md w-40 h-14 rounded-md hover:bg-red-700 transition flex items-center justify-center p-2"
+              >
+                Descargar CV
+                <FaDownload className="ml-2" />
+              </a>
+            </div>
           </div>
           <div>
-            <p className="text-2xl pb-2 font-custom text-slate-200">
+            <p className="text-2xl sm:text-lg pb-2 font-custom">
               Si puedes pensarlo,
             </p>
             <div>
@@ -60,9 +62,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2">
+        <div className="flex w-full lg:w-1/2">
           <img
-            className="absolute top-28 inset-0 mx-auto w-[50%] h-auto rounded-full z-0 lg:w-80 lg:h-auto lg:relative lg:top-0 lg:inset-auto lg:opacity-100"
+            className="absolute sm:left-64 sm:top-26 top-28 inset-0 mx-auto w-[50%] sm:w-[35%] h-auto rounded-full z-0 lg:w-80 lg:h-auto lg:relative lg:top-0 lg:inset-auto lg:opacity-100"
             src="../perfil2.jpg"
             alt="imagen de perfil"
           />
@@ -84,7 +86,7 @@ function App() {
             trabajando con frameworks como React Js. Mi objetivo es siempre
             aprender, innovar y aportar valor con cada línea de código.
           </p>
-          <span className="text-red-500 font-semibold text-center sm:text-start text-3xl py-6">
+          <span className="font-semibold text-center sm:text-start text-3xl py-6">
             Habilidades técnicas
           </span>
           <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 pt-4">
@@ -112,6 +114,16 @@ function App() {
               src="../github.png"
               alt="logo github"
             />
+            <img
+              className="w-28"
+              src="../mongo1.jpg"
+              alt="logo tailwind"
+            />
+            <img
+              className="w-14 sm:w-16"
+              src="../expressjs.jpg"
+              alt="logo tailwind"
+            />
           </div>
         </div>
       </section>
@@ -124,9 +136,12 @@ function App() {
           <ProjectsMap />
         </div>
       </section>
-      <footer className="pt-10">
-        <hr />
-        <div className="w-full h-32 flex justify-center items-center gap-4">
+      <footer className="flex flex-col gap-6 items-center w-full sm:w-2/3 pt-12">
+        <a className="flex items-center justify-center gap-4 pt-10" href="">
+          <FaEnvelope></FaEnvelope>
+          <span>joseluis123_3@htomail.com</span>
+        </a>
+        <div className="w-full flex justify-center items-center gap-4">
           <a href="#">
             <img
               className="w-14 sm:w-14 hover:scale-110"
@@ -134,13 +149,7 @@ function App() {
               alt="logo github"
             />
           </a>
-          <a href="#">
-            <img
-              className="w-12 hover:scale-110"
-              src="../whatsappfooter.png"
-              alt="logo whatsapp"
-            />
-          </a>
+          <WhatsAppButton />
           <a href="#">
             <img
               className="w-10 sm:w-12 hover:scale-110"
@@ -148,7 +157,7 @@ function App() {
               alt="logo instagram"
             />
           </a>
-          <a href="#">
+          <a href="https://github.com/JoseluisDev24">
             <img
               className="w-12 sm:w-16 hover:scale-110"
               src="../linkedinfooter.png"
@@ -158,8 +167,7 @@ function App() {
         </div>
         <div>
           <p className="text-center text-gray-400 text-sm pb-4">
-            {" "}
-            © 2025 José Luis. Todos los derechos reservados.
+            © 2025 José Luis Rosano. Todos los derechos reservados.
           </p>
         </div>
       </footer>

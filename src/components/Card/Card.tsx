@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, image, link, linkGithub }) => {
   return (
-    <div className="w-11/12 h-62 sm:w-4/12 bg-neutral-900 border border-b-4 border-slate-200 border-opacity-50 rounded-lg overflow-hidden flex flex-col">
+    <div className="w-[100%] h-62 sm:w-4/12 bg-neutral-900 border border-b-4 border-slate-200 border-opacity-50 rounded-lg overflow-hidden flex flex-col">
       <img
         className="object-cover m-4 rounded-xl shadow-[0_0_3px_rgba(226,232,240,0.8)] transition-transform duration-300 ease-in-out hover:scale-125"
         src={image}

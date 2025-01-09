@@ -14,7 +14,7 @@ header .navBtn {
     header nav {
         color: #f1f5f9;
         font-weight: semibold;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         position: fixed;
         top: 0;
         left: 0;
@@ -27,7 +27,7 @@ header .navBtn {
         background-color: #191a1a;
         opacity: 1;
         transition: 1s;
-        transform: translatex(-100vh);
+        transform: translateX(-100%);
     }
      header .navBtn {
         display: block;
