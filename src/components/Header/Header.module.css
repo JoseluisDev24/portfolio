@@ -9,7 +9,7 @@ header .navBtn {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
    
     header nav {
         color: #f1f5f9;
