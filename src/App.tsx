@@ -3,8 +3,6 @@ import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
 import ProjectsMap from "./components/ProjectsMap/ProjectsMap";
 import { FaDownload } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
-import WhatsAppButton from "./components/WhatsappButton/WhatsappButton";
 
 function App() {
   return (
