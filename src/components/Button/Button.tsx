@@ -8,7 +8,7 @@ interface Props {
 }
 const Button = ({ children, link, download, className }: Props) => {
   return (
-    <a href={link} download={download} className={className}>
+    <a href={link} download={download} className={className} target="_blank">
       <button>{children}</button>
     </a>
   );

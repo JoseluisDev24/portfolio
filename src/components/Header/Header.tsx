@@ -49,9 +49,7 @@ function Header(props: Props) {
           Proyectos
         </a>
         <a
-          href="https://wa.me/59892171503?"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#contacto"
           className="hover:text-red-500 hover:scale-110 transition"
           onClick={handleShowNavbar}
         >

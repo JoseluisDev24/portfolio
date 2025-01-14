@@ -27,14 +27,17 @@ function App() {
             Desarrollador Fullstack.
           </h1>
           <div className="py-4 sm:py-1 flex gap-4">
-            <Button className="bg-red-700 w-40 sm:w-32 h-14 sm:h-10 font-semibold text-md rounded-md hover:bg-red-500 flex items-center justify-center">
+            <Button
+              link="https://linkedin.com/in/josé-luis-rosano-3498ab287"
+              className="bg-red-700 w-40 h-14 sm:h-10 font-semibold text-md rounded-md hover:bg-red-500 flex items-center justify-center"
+            >
               Contáctame
             </Button>
-            <div className="gap-4 sm:hidden">
+            <div className="gap-4">
               <a
                 href="/cv.pdf"
                 download="José Rosano CV.pdf"
-                className="border text-md w-40 h-14 rounded-md hover:bg-red-700 transition flex items-center justify-center p-2"
+                className="border text-md w-40 h-14 sm:h-10 rounded-md hover:bg-red-700 transition flex items-center justify-center p-2"
               >
                 Descargar CV
                 <FaDownload className="ml-2" />
@@ -76,17 +79,19 @@ function App() {
       >
         <div className="flex flex-col items-center gap-6">
           <h2 className="text-4xl sm:pt-16 font-semibold font-custom">
+            <span className="text-red-600 font-semibold text-5xl px-2">.</span>
             Sobre mí
           </h2>
           <p className="py-10">
             Soy desarrollador frontend. Me apasiona crear interfaces web
-            robustas y funcionales. Mis habilidades más fuertes son html, css y
-            javascrypt. Estoy constantemente ampliando mis conocimientos con
+            robustas y funcionales. Mis habilidades más fuertes son HTML5, CSS y
+            Javascrypt. Estoy constantemente ampliando mis conocimientos con
             nuevas herramientas y tecnologías. También me siento cómodo
             trabajando con frameworks como React Js. Mi objetivo es siempre
             aprender, innovar y aportar valor con cada línea de código.
           </p>
-          <span className="font-semibold text-center sm:text-start text-3xl py-6">
+          <span className="font-custom font-semibold text-center sm:text-start text-4xl py-6">
+            <span className="text-red-600 font-semibold text-5xl px-2">.</span>
             Habilidades técnicas
           </span>
           <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 pt-4">
@@ -114,11 +119,7 @@ function App() {
               src="../github.png"
               alt="logo github"
             />
-            <img
-              className="w-28"
-              src="../mongo1.jpg"
-              alt="logo tailwind"
-            />
+            <img className="w-28" src="../mongo1.jpg" alt="logo tailwind" />
             <img
               className="w-14 sm:w-16"
               src="../expressjs.jpg"
@@ -129,37 +130,28 @@ function App() {
       </section>
       <section
         id="proyectos"
-        className="min-h-screen w-full pt-16 flex flex-col items-center sm:w-2/3"
+        className="min-h-screen w-full pt-16 flex flex-col items-center sm:w-2/3 pb-20"
       >
-        <h3 className="text-4xl py-10 font-semibold font-custom">Proyectos</h3>
+        <h3 className="text-4xl py-10 font-semibold font-custom">
+          <span className="text-red-600 font-semibold text-5xl px-2">.</span>
+          Proyectos
+        </h3>
         <div className="flex flex-wrap justify-center gap-8 pt-6">
           <ProjectsMap />
         </div>
       </section>
-      <footer className="flex flex-col gap-6 items-center w-full sm:w-2/3 pt-12">
-        <a className="flex items-center justify-center gap-4 pt-10" href="">
-          <FaEnvelope></FaEnvelope>
-          <span>joseluis123_3@htomail.com</span>
-        </a>
-        <div className="w-full flex justify-center items-center gap-4">
-          <a href="#">
+      <footer
+        id="contacto"
+        className="flex flex-col gap-6 items-center w-full sm:w-2/3 pt-12"
+      >
+        <div className="w-full flex flex-col justify-center items-center gap-4">
+          <span className="text-xl font-semibold">
+            Contacto
+            <span className="text-red-600 font-semibold text-2xl px-2">.</span>
+          </span>
+          <a href="https://linkedin.com/in/josé-luis-rosano-3498ab287">
             <img
-              className="w-14 sm:w-14 hover:scale-110"
-              src="../githubfooter.png"
-              alt="logo github"
-            />
-          </a>
-          <WhatsAppButton />
-          <a href="#">
-            <img
-              className="w-10 sm:w-12 hover:scale-110"
-              src="../instagramfooter.png"
-              alt="logo instagram"
-            />
-          </a>
-          <a href="https://github.com/JoseluisDev24">
-            <img
-              className="w-12 sm:w-16 hover:scale-110"
+              className="w-16 hover:scale-110"
               src="../linkedinfooter.png"
               alt="logo github"
             />
@@ -167,7 +159,7 @@ function App() {
         </div>
         <div>
           <p className="text-center text-gray-400 text-sm pb-4">
-            © 2025 José Luis Rosano. Todos los derechos reservados.
+            © 2025 José Luis Rosano.
           </p>
         </div>
       </footer>
