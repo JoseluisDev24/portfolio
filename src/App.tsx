@@ -145,7 +145,6 @@ function App() {
         <div className="w-full flex flex-col justify-center items-center gap-4">
           <span className="text-xl font-semibold">
             Contacto
-            <span className="text-red-600 font-semibold text-2xl px-2">.</span>
           </span>
           <a href="https://linkedin.com/in/josé-luis-rosano-3498ab287">
             <img
