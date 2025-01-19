@@ -31,7 +31,7 @@ const ProjectsMap = () => {
       title: "Todo List React",
       description: "Todo List usando React Js.",
       image: "/todoreact.png",
-      link: "https://todolistreactbios.netlify.app/",
+      link: "https://back-next-js.vercel.app/",
       linkGithub: "https://github.com/JoseluisDev24/entregable-react-bios",
     },
   ];
