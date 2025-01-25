@@ -32,7 +32,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link, linkGithub
         <a href={linkGithub} target="_blank" rel="noopener noreferrer">
           <img
             className="w-8 hover:scale-110"
-            src="../github.png"
+            src="../github-min.png"
             alt="logo github"
           />
         </a>
