@@ -92,15 +92,27 @@ function App() {
             Habilidades técnicas
           </span>
           <div className="flex flex-wrap justify-center items-center gap-4 pt-4">
-            <img className="w-8 sm:w-12" src="../html-min.png" alt="logo HTML" />
+            <img
+              className="w-8 sm:w-12"
+              src="../html-min.png"
+              alt="logo HTML"
+            />
             <img className="w-10 sm:w-16" src="../css-min.png" alt="logo css" />
             <img
               className="w-10 sm:w-16"
               src="../js-min.png"
               alt="logo javascrypt"
             />
-            <img className="w-16 sm:w-20" src="../sass-min.png" alt="logo SASS" />
-            <img className="w-12 sm:w-16" src="../react-min.png" alt="logo React" />
+            <img
+              className="w-16 sm:w-20"
+              src="../sass-min.png"
+              alt="logo SASS"
+            />
+            <img
+              className="w-12 sm:w-16"
+              src="../react-min.png"
+              alt="logo React"
+            />
             <img
               className="w-16 sm:w-20"
               src="../node-min.png"
@@ -123,7 +135,16 @@ function App() {
               src="../github-min.png"
               alt="logo github"
             />
-            <img className="w-14" src="../expressjs-min.jpg" alt="logo express" />
+            <img
+              className="w-10 sm:w-14"
+              src="../figma.png"
+              alt="logo figma"
+            />
+            <img
+              className="w-10 sm:w-14"
+              src="../expressjs-min.jpg"
+              alt="logo express"
+            />
           </div>
         </div>
       </section>

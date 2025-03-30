@@ -12,6 +12,15 @@ const ProjectsMap = () => {
     },
     {
       id: 2,
+      title: "Shopping Cart",
+      description:
+        "Carrito de compras hecho con React Js, Context API y Tailwind.",
+      image: "/shopping.png",
+      link: "https://shopping-cart-swart-tau.vercel.app/",
+      linkGithub: "https://github.com/JoseluisDev24/shopping-cart.git",
+    },
+    {
+      id: 3,
       title: "Todo List",
       description: "Todo list con HTML, CSS, Javascrypt.",
       image: "/tododom-min.png",
@@ -19,7 +28,7 @@ const ProjectsMap = () => {
       linkGithub: "",
     },
     {
-      id: 3,
+      id: 4,
       title: "Sarandí Fit",
       description: "Web con html y css.",
       image: "/sarandifit-min.png",
@@ -27,10 +36,18 @@ const ProjectsMap = () => {
       linkGithub: "",
     },
     {
-      id: 4,
+      id: 5,
       title: "Todo List React",
-      description: "Todo List usando React Js.",
+      description: "CRUD Todo List con Next JS y MongoDB.",
       image: "/todoreact-min.png",
+      link: "https://back-next-js.vercel.app/",
+      linkGithub: "https://github.com/JoseluisDev24/entregable-react-bios",
+    },
+    {
+      id: 6,
+      title: "Proximamente app de clima",
+      description: "App de clima con React JS y Tailwind.",
+      image: "/clima.png",
       link: "https://back-next-js.vercel.app/",
       linkGithub: "https://github.com/JoseluisDev24/entregable-react-bios",
     },
