@@ -16,11 +16,11 @@ const Card: React.FC<CardProps> = ({ title, description, image, link, linkGithub
         src={image}
         alt={title}
       />
-      <div className="px-4 ">
+      <div className="px-4 flex-grow">
         <h2 className="font-bold text-xl mb-2">{title}</h2>
         <p className="text-stone-400 text-base">{description}</p>
       </div>
-      <div className="px-4 py-4 h-16 text-sm flex justify-between gap-2">
+      <div className="px-4 py-4 h-16 text-sm flex justify-between gap-2 mt-auto">
         <a
           href={link}
           target="_blank"
@@ -29,13 +29,15 @@ const Card: React.FC<CardProps> = ({ title, description, image, link, linkGithub
         >
           Ver Demo
         </a>
-        <a href={linkGithub} target="_blank" rel="noopener noreferrer">
-          <img
-            className="w-8 hover:scale-110"
-            src="../github-min.png"
-            alt="logo github"
-          />
-        </a>
+        {linkGithub && (
+          <a href={linkGithub} target="_blank" rel="noopener noreferrer">
+            <img
+              className="w-8 hover:scale-110"
+              src="../github-min.png"
+              alt="logo github"
+            />
+          </a>
+        )}
       </div>
     </div>
   );
