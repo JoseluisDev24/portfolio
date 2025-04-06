@@ -45,10 +45,10 @@ const ProjectsMap = () => {
     },
     {
       id: 6,
-      title: "Proximamente app de clima",
+      title: "Weather App",
       description: "App de clima con React JS y Tailwind.",
-      image: "/clima.png",
-      link: "https://back-next-js.vercel.app/",
+      image: "/clima.jpg",
+      link: "https://weather-app-green-ten-93.vercel.app",
       linkGithub: "https://github.com/JoseluisDev24/entregable-react-bios",
     },
   ];
