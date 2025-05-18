@@ -82,8 +82,7 @@ function App() {
           </h2>
           <p className="py-10">
             Soy Desarrollador Fullstack. Mis habilidades más fuertes son HTML5,
-            CSS y Javascrypt. También me siento cómodo trabajando con frameworks
-            como React y NextJs. Estoy constantemente ampliando mis
+            CSS y Javascrypt. También me siento cómodo trabajando con frameworks como NextJs. Estoy constantemente ampliando mis
             conocimientos con nuevas herramientas y tecnologías. Mi objetivo es
             siempre aprender, innovar y aportar valor con cada línea de código.
           </p>

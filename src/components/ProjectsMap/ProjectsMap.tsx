@@ -12,12 +12,11 @@ const ProjectsMap = () => {
     },
     {
       id: 2,
-      title: "Shopping Cart",
-      description:
-        "Carrito de compras hecho con React Js, Context API y Tailwind.",
-      image: "/shopping.png",
-      link: "https://shopping-cart-swart-tau.vercel.app/",
-      linkGithub: "https://github.com/JoseluisDev24/shopping-cart.git",
+      title: "e-commerce",
+      description: "Proyecto tienda online realizado con Next JS y Typescript.",
+      image: "/post-linkedin.jpg",
+      link: "https://e-commerce-next-js-red-omega.vercel.app/",
+      linkGithub: "https://github.com/JoseluisDev24/e-commerceNextJS.git",
     },
     {
       id: 3,
@@ -50,6 +49,15 @@ const ProjectsMap = () => {
       image: "/clima.jpg",
       link: "https://weather-app-green-ten-93.vercel.app",
       linkGithub: "https://github.com/JoseluisDev24/entregable-react-bios",
+    },
+    {
+      id: 7,
+      title: "Shopping Cart",
+      description:
+        "Carrito de compras hecho con React Js, Context API y Tailwind.",
+      image: "/shopping.png",
+      link: "https://shopping-cart-swart-tau.vercel.app/",
+      linkGithub: "https://github.com/JoseluisDev24/shopping-cart.git",
     },
   ];
 
